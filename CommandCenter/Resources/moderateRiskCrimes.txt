@@ -1,0 +1,32 @@
+Accessory
+Aggravated Assault
+Blackmail
+Bribery
+Child Abandonment
+Child Abuse
+Computer Crime (Class 3)
+Conspiracy (Class 3)
+Credit Fraud
+Distribution of a Controlled Substance
+Embezzlement (Second Degree)
+Extortion
+Felony Escape (First Degree)
+Forgery
+Grand Larceny
+Identity Theft
+Insurance Fraud
+Manslaughter (Voluntary)
+Manufacturing of a Controlled Substance
+Murder (Second Degree)
+Perjury
+Possession of a Controlled Substance
+Prostitution
+Robbery
+Sexual Assault
+Smuggling
+Tax Evasion
+Tax Fraud
+Trafficking of Protected Wildlife
+Unlicensed Ownership of Weaponry
+Vehicle Theft
+Vehicular Manslaughter
