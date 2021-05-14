@@ -38,7 +38,8 @@ namespace CommandCenter
         public Weapon(KeyValuePair<string, Tuple<string, string, string, string, double[], double[], string, double[], string, double[], double[], int>> targetWeapon, int targetRarity)
         {
 
-            // keep all changeable weapon stats in memory for respec options to avoid creating a new weapon each time a stat is modified
+            // keep all changeable weapon stats in memory for respec options to
+            // avoid creating a new weapon each time a stat is modified
             allCritPowerValues = targetWeapon.Value.critPower;
             allRangeValues = targetWeapon.Value.range;
             allAPCostValues = targetWeapon.Value.APCost;
@@ -81,6 +82,7 @@ namespace CommandCenter
             }
         }
 
+        // create a model number for the weapon 
         private string determineWeaponType(string t)
         {
             char[] chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
@@ -106,6 +108,7 @@ namespace CommandCenter
             return modelNumber + " " + t;
         }
 
+        // roll a random number as a seed for the rarity of the weapon
         private string determineRarity(int r)
         {
 
@@ -160,11 +163,13 @@ namespace CommandCenter
             }
         }
 
+        // use the Shuffler to pull from the manufacturers file
         private string determineManufacturer()
         {
             return Shuffler.getRandomElement("manufacturers");
         }
 
+        // change a base weapon to Common
         public static void makeCommon(Weapon w)
         {
             int pos;
@@ -211,6 +216,7 @@ namespace CommandCenter
             }
         }
 
+        // change a base weapon to Uncommon
         public static void makeUncommon(Weapon w)
         {
             int pos;
@@ -258,6 +264,7 @@ namespace CommandCenter
             w.MSRP = (int) Math.Ceiling(w.MSRP * 1.25);
         }
 
+        // change a base weapon to Rare
         public static void makeRare(Weapon w)
         {
             int pos;
@@ -305,6 +312,7 @@ namespace CommandCenter
             w.MSRP = (int) Math.Ceiling(w.MSRP * 1.50);
         }
 
+        // change a base weapon to Exotic
         public static void makeExotic(Weapon w)
         {
             int pos;
@@ -353,8 +361,9 @@ namespace CommandCenter
         }
 
         // use this formula to respec a weapon by specifiying the number of positive and negative changes to be made, and which stats may
-        // be considerd eligible to be modified, based on classification a dicitonary of the base values must also be passed for reference
-        // during comparison, to note when a change is made from the default instance of the weapon
+        // be considerd eligible to be modified, based on classification.
+        // a dicitonary of the base values must also be passed for reference during
+        // comparison, to note when a change is made from the default instance of the weapon
         public static void respec(Weapon weapon, int positives, int negatives, Dictionary<string, double> currentStats, Dictionary<string, double[]> possibleStats, List<string> options)
         {
             int randomIndex;

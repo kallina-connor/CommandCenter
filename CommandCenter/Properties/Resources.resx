@@ -18809,8 +18809,32 @@
         AJoj0AAAAAAAAAAANOb/++f/DyE+me84rjaxAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="locations" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\locations.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  <data name="locations_all" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\locations_all.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="locations_contested" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\locations_contested.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="locations_ecumenopolis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\locations_ecumenopolis.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="locations_hutt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\locations_hutt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="locations_neutral" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\locations_neutral.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="locations_republic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\locations_republic.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="locations_separatist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\locations_separatist.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="locations_uncontested" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\locations_uncontested.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="locations_undeveloped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\locations_undeveloped.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
   <data name="lowRiskCrimes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lowRiskCrimes.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>

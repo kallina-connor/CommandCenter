@@ -14,8 +14,9 @@ namespace CommandCenter
     public partial class formCommandCenter : Form
     {
         public static Form formMaster;
-        public static Form formBounty;
         public static Form formWeapon;
+        public static Form formJob;
+        public static Form formBounty;
 
         public formCommandCenter()
         {
@@ -24,14 +25,18 @@ namespace CommandCenter
             pictureBoxWeapon.Image = Properties.Resources.weaponPicture;
             pictureBoxJob.Image = Properties.Resources.jobsPicture;
             formMaster = this;
-            formBounty = new formBountyGenerator();
             formWeapon = new formWeaponGenerator();
+            formJob = new formJobGenerator();
+            formBounty = new formBountyGenerator();
         }
+
+        // completely quit the program
         private void formCommandCenter_FormClosing(object sender, FormClosingEventArgs e)
         {
             Environment.Exit(0);
         }
 
+        // play the hidden song
         private void labelSecret_Click(object sender, EventArgs e)
         {
             Console.Beep(440, 500);
@@ -54,16 +59,25 @@ namespace CommandCenter
             Console.Beep(440, 1000);
         }
 
-        private void buttonBounty_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            formBounty.Show();
-        }
-
+        // close the main window and launch the weapon generator form
         private void buttonWeapon_Click(object sender, EventArgs e)
         {
             this.Hide();
             formWeapon.Show();
+        }
+
+        // close the main window and launch the job generator form
+        private void buttonJob_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            formJob.Show();
+        }
+
+        // close the main window and launch the bounty generator form
+        private void buttonBounty_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            formBounty.Show();
         }
     }
 }

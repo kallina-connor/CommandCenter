@@ -68,7 +68,8 @@ namespace CommandCenter
             formCommandCenter.formMaster.Show();
         }
 
-        // generates a dictionary of weapons from the PHB and adds them to a catalog all key values are added to the list of options for the comboBox to select from
+        // generates a dictionary of weapons from the Player's Handbook and adds them to a catalog
+        // all key values are added to the list of options for the comboBox to select from
         private void initializeWeaponsDictionary()
         {
             // placeholder value for display in comboBox only
@@ -204,6 +205,8 @@ namespace CommandCenter
             comboBoxWeaponTypes.ValueMember = "Value";
         }
 
+        // create an instance of a weapon using the Weapon Generator Form
+        // form fields for the parameters
         private void buttonGenerate_Click(object sender, EventArgs e)
         {
             string dictionaryKey = comboBoxWeaponTypes.Text;
@@ -219,7 +222,8 @@ namespace CommandCenter
                 // create as many weapons as specified by batch quantity
                 for (int instances = 0; instances < quantity; instances++)
                 {
-                    // ensures a weapon will be randomly selected if the "Any" option is not selected
+                    // ensures a weapon of the specified type will be
+                    // selected if the "Any" option is not chosen
                     if (dictionaryKey != "Any")
                     {
                         generatedWeapon = new Weapon(selected, rarityLevel);
@@ -257,9 +261,9 @@ namespace CommandCenter
                         Weapon.makeExotic(generatedWeapon);
                     }
 
-                    //move the caret to the end of the text
+                    // move the caret to the end of the text
                     textBoxConsole.SelectionStart = textBoxConsole.TextLength;
-                    //scroll to the caret
+                    // scroll to the caret so the user can see the weapon they just created
                     textBoxConsole.ScrollToCaret();
 
                     // add the newly created weapon to the table, sorted by column, then highlight it
@@ -280,7 +284,8 @@ namespace CommandCenter
             // create only a single instance of a random weapon, with the choice to add to table still reliant on user input
             else if (quantity <= 1)
             {
-                // ensures a weapon will be randomly selected if the "Any" option is not selected
+                // ensures a weapon of the specified type will be
+                // selected if the "Any" option is not chosen
                 if (dictionaryKey != "Any")
                 {
                     generatedWeapon = new Weapon(selected, rarityLevel);
@@ -340,10 +345,11 @@ namespace CommandCenter
 
             //move the caret to the end of the text
             textBoxConsole.SelectionStart = textBoxConsole.TextLength;
-            //scroll to the caret
+            // scroll to the caret so the user can see the weapon they just created
             textBoxConsole.ScrollToCaret();
         }
 
+        // delete all weapon generator history and reset the form fields to their default values 
         private void buttonClearForm_Click(object sender, EventArgs e)
         {
             batchQuantity.Value = 1;
@@ -479,6 +485,7 @@ namespace CommandCenter
             }
         }
 
+        // toggle the visibility of the console by clicking it
         private void buttonConsole_Click(object sender, EventArgs e)
         {
             if (textBoxConsole.Visible == true)
@@ -491,7 +498,8 @@ namespace CommandCenter
             }
         }
 
-        //changes the textbox colors if a weapon has had its stats changed from the default values of that weapon type
+        // changes the textbox colors if a weapon's new stats are
+        // changed from the default values of that weapon's type
         private void getColors(Weapon w)
         {
             string name = w.weaponType.Substring(w.weaponType.IndexOf(' ') + 1);
@@ -502,6 +510,7 @@ namespace CommandCenter
             double baseDUR = catalog[name].DUR[2];
             double baseRange = catalog[name].range[1];
 
+            // color codes for accuracy stat changes
             if (w.accuracy > baseAccuracy)
             {
                 textBoxAccuracy.BackColor = Color.FromArgb(144, 238, 144);
@@ -515,6 +524,7 @@ namespace CommandCenter
                 textBoxAccuracy.BackColor = Color.White;
             }
 
+            // color codes for AP cost stat changes
             if (w.APCost < baseAPCost)
             {
                 textBoxAPCost.BackColor = Color.FromArgb(144, 238, 144);
@@ -528,6 +538,7 @@ namespace CommandCenter
                 textBoxAPCost.BackColor = Color.White;
             }
 
+            // color codes for crit power stat changes
             if (w.critPower > baseCritPower)
             {
                 textBoxCritPower.BackColor = Color.FromArgb(144, 238, 144);
@@ -541,6 +552,7 @@ namespace CommandCenter
                 textBoxCritPower.BackColor = Color.White;
             }
 
+            // color codes for durability stat changes
             if (w.DUR > baseDUR)
             {
                 textBoxDurability.BackColor = Color.FromArgb(144, 238, 144);
@@ -554,6 +566,7 @@ namespace CommandCenter
                 textBoxDurability.BackColor = Color.White;
             }
 
+            // color codes for range stat changes
             if (w.range > baseRange)
             {
                 textBoxRange.BackColor = Color.FromArgb(144, 238, 144);
@@ -567,6 +580,7 @@ namespace CommandCenter
                 textBoxRange.BackColor = Color.White;
             }
 
+            // color codes for rarity
             if (w.rarity == "Common")
             {
                 textBoxRarity.BackColor = Color.FromArgb(236, 238, 145);
@@ -585,6 +599,7 @@ namespace CommandCenter
             }
         }
 
+        // play the secret sound
         private void labelDamage_Click(object sender, EventArgs e)
         {
             SoundPlayer player = new SoundPlayer(Properties.Resources.wilhelm_scream);

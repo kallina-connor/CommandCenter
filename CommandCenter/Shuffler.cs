@@ -8,6 +8,7 @@ namespace CommandCenter
 {
     class Shuffler
     {
+        // randomly selects an element from a list (one line from any file)
         public static string getRandomElement(string fileName)
         {
             List<string> options = createList(fileName);
@@ -15,6 +16,7 @@ namespace CommandCenter
             return item;
         }
 
+        // make a file into a list to have an element programatically selected
         private static List<string> createList(string fileName)
         {
             string resource_data = (string) Properties.Resources.ResourceManager.GetObject(fileName);

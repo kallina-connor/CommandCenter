@@ -54,6 +54,8 @@ namespace CommandCenter
             }
         }
     
+        // determine a bounty's reward based on risk level, number of targets, and
+        // number of players in the party (higher reward if party is outnumbered by targets)
         private int calculateReward(int r, int t, int p)
         {
             int conditionalMinimum;
@@ -97,6 +99,7 @@ namespace CommandCenter
             }
         }
 
+        // assigns a randomized serial number to each instance of a bounty
         private string makeSerial(int c)
         {
             char[] chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
@@ -117,6 +120,7 @@ namespace CommandCenter
             return c + "-" + serial + ".bty";
         }
 
+        // assigns special conditions to each bounty based on user input
         private string determineCondition(int r)
         {
             string condition = "";
@@ -139,6 +143,7 @@ namespace CommandCenter
             return condition;
         }
 
+        // displays details of a bounty to the user
         public override string ToString()
         {
             string readout = "";
@@ -147,6 +152,7 @@ namespace CommandCenter
             readout += "  [RISK LEVEL]: " + riskLevel + "\r\n";
             readout += " \r\n";
 
+            // details of each target in the bounty
             foreach (Target t in targetsList)
             {
                 readout += t.name + "\r\n";

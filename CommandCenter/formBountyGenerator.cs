@@ -38,17 +38,20 @@ namespace CommandCenter
             textBoxReadout.Text = null;
         }
 
+        //close the program
         private void formBountyGenerator_FormClosing(object sender, FormClosingEventArgs e)
         {
             Environment.Exit(0);
         }
 
+        //close this form and return to the main form
         private void buttonExit_Click(object sender, EventArgs e)
         {
             this.Hide();
             formCommandCenter.formMaster.Show();
         }
 
+        //create a new bounty
         private void buttonGenerate_Click(object sender, EventArgs e)
         {
             globalCounter += 1;
@@ -56,6 +59,7 @@ namespace CommandCenter
             textBoxReadout.Text = generatedBounty.ToString();
         }
 
+        //creates a new bounty with entirley random parameters
         private void buttonRandom_Click(object sender, EventArgs e)
         {
             globalCounter += 1;
@@ -74,6 +78,7 @@ namespace CommandCenter
             textBoxReadout.Text = generatedBounty.ToString();
         }
 
+        //add the last generated bounty to the record list
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             if (generatedBounty != null)
@@ -91,6 +96,7 @@ namespace CommandCenter
             }
         }
 
+        // remove the last generated bounty to the record list
         private void buttonRemove_Click(object sender, EventArgs e)
         {
             int updater = 0;
@@ -100,7 +106,7 @@ namespace CommandCenter
                 updater = row.Index;
                 tablePreviousBounties.Rows.RemoveAt(row.Index);
             }
-            //update the textboxes as if a new weapon was chosen (because the weapon after the deleted weapon IS chosen by default)
+            // update the textboxes as if a new bounty was chosen (because the weapon after the deleted bounty IS chosen by default)
             try
             {
                 tablePreviousBounties_CellClick(this.tablePreviousBounties, new DataGridViewCellEventArgs(0, updater));
@@ -111,6 +117,7 @@ namespace CommandCenter
             }
         }
 
+        // clear all records and reset the form fields
         private void buttonClear_Click(object sender, EventArgs e)
         {
             globalCounter = 0;
@@ -164,12 +171,13 @@ namespace CommandCenter
             riskLevel = 3;
         }
 
+        // highlights a row of records and displays the details
         private void tablePreviousBounties_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 
             if (e.RowIndex >= 0)
             {
-                //gets a collection that contains all the rows
+                // gets a collection that contains all the rows
                 DataGridViewRow row = this.tablePreviousBounties.Rows[e.RowIndex];
 
                 Bounty comparator = (Bounty) row.Cells[5].Value;

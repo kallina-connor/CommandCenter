@@ -12,9 +12,13 @@ namespace CommandCenter
 {
     public partial class formJobGenerator : Form
     {
+
+        Dictionary<String, List<String>> parameters = new Dictionary<string, List<string>>();
+
         public formJobGenerator()
         {
             InitializeComponent();
+            pictureBoxJobs.Image = Properties.Resources.jobsPicture;
         }
     }
 }

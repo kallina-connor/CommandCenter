@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace CommandCenter
 {
+    // tuples used as the value of the weapon dictionary
+    // each weapon type (the dictionary key) will have a unique
+    // set of stats, stored as a Tuple (the dictionary value)
     internal class Tuple<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>
     {
         public string classification;

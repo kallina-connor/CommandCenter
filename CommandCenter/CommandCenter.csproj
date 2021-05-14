@@ -71,6 +71,7 @@
     <Compile Include="formWeaponGenerator.Designer.cs">
       <DependentUpon>formWeaponGenerator.cs</DependentUpon>
     </Compile>
+    <Compile Include="Job.cs" />
     <Compile Include="KeyValuePair.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -114,7 +115,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\locations.txt" />
+    <None Include="Resources\locations_all.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bounty.png" />
@@ -145,6 +146,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wilhelm scream.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\locations_undeveloped.txt" />
+    <None Include="Resources\locations_uncontested.txt" />
+    <None Include="Resources\locations_neutral.txt" />
+    <None Include="Resources\locations_contested.txt" />
+    <None Include="Resources\locations_ecumenopolis.txt" />
+    <None Include="Resources\locations_hutt.txt" />
+    <Content Include="Resources\locations_republic.txt" />
+    <None Include="Resources\locations_separatist.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

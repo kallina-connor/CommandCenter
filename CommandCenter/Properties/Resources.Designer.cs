@@ -120,70 +120,358 @@ namespace CommandCenter.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Aargau
-        ///Aargonar
-        ///Abhean
-        ///Abregado-Rae
-        ///Aduba
-        ///Adumar
-        ///Aeten
-        ///Agamar
-        ///Akrit&apos;tar
-        ///Akuria
-        ///Alderaan
-        ///Aleen
-        ///Allanteen
-        ///Allon
-        ///Almania
-        ///Alpheridies
-        ///Alsakan
-        ///Alzoc
-        ///Ambria
-        ///Anaxes
-        ///Andara
-        ///Ando
-        ///Ankus
-        ///Anoth
-        ///Ansion
-        ///Antar
-        ///Anteevy
-        ///Anzat
-        ///Aquaris
-        ///Arami
-        ///Arbra
-        ///Argazda
-        ///Aridus
-        ///Arkania
-        ///Askaj
-        ///Ator
-        ///Atraken
-        ///Atravis
-        ///Attahox
-        ///Atzerri
-        ///Axxila
-        ///Azure
-        ///Bacrana
-        ///Bakura
-        ///Balamak
-        ///Balmorra
-        ///Balnab
-        ///Balosar
-        ///Bandomeer
-        ///Barab
-        ///Baros
-        ///Bastion
-        ///Belasco
-        ///Belderone
-        ///Belkadan
-        ///Bellassa
-        ///Belnar
-        ///Belsavis
-        ///Berchest
-        ///Berrol&apos; [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Aargau [L-10]
+        ///Aargonar [Q-7]
+        ///Abhean [R-7]
+        ///Abregado-Rae [K-13]
+        ///Aduba [U-11]
+        ///Adumar [J-6]
+        ///Aeten [J-6]
+        ///Agamar [M-5]
+        ///Akrit&apos;tar [T-9]
+        ///Akuria [M-5]
+        ///Alderaan [M-10]
+        ///Aleen [L-7]
+        ///Allanteen [O-14]
+        ///Allon [N-12]
+        ///Almania [S-5]
+        ///Alpheridies [O-8]
+        ///Alsakan [L-9]
+        ///Alzoc [P-19]
+        ///Ambria [O-10]
+        ///Anaxes [L-9]
+        ///Andara [L-13]
+        ///Ando [Q-15]
+        ///Ankus [I-7]
+        ///Anoth [J-20]
+        ///Ansion [I-6]
+        ///Antar [N-12]
+        ///Anteevy [P-7]
+        ///Anzat [R-7]
+        ///Aquaris [N-7]
+        ///Arami [T-13]
+        ///Arbra [N-17]
+        ///Argazda [N-4]
+        ///Aridus [O-14]
+        ///Arkania [M-8]
+        ///Askaj [ [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string locations {
+        internal static string locations_all {
             get {
-                return ResourceManager.GetString("locations", resourceCulture);
+                return ResourceManager.GetString("locations_all", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Agamar [M-5]
+        ///Atraken [Q-7]
+        ///Attahox [P-12]
+        ///Balamak [Q-9]
+        ///Bandomeer [O-6]
+        ///Bimmisaari [R-9]
+        ///Boonta [S-8]
+        ///Boz Pity [S-9]
+        ///Belasco [O-11]
+        ///Chalacta [R-10]
+        ///Charros [R-9]
+        ///Deysum [Q-10]
+        ///Entralla [K-4]
+        ///Farquar [Q-11]
+        ///Garqi [K-5]
+        ///Gyndine [O-12]
+        ///Kinyen [L-15]
+        ///Mimban [O-12]
+        ///Nanth&apos;ri [Q-12]
+        ///New Apsolon [P-10]
+        ///Randon [Q-10]
+        ///Ruusan [P-11]
+        ///Sharlissia [N-18]
+        ///Sneeve [Q-10]
+        ///Togoria [P-9]
+        ///Uogo&apos;Cor [Q-10]
+        ///Sarka [Q-8]
+        ///Geonosis [R-16].
+        /// </summary>
+        internal static string locations_contested {
+            get {
+                return ResourceManager.GetString("locations_contested", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to G&apos;wenee [N-6]
+        ///Nar Shaddaa [S-12]
+        ///Empress Teta [L-10]
+        ///Coruscant [L-9]
+        ///Taris [N-7]
+        ///Axxila [O-5]
+        ///Skako [L-9]
+        ///Alsakan [L-9]
+        ///Ator [M-10]
+        ///Gerrenthum [K-18]
+        ///Grizmallt [L-9]
+        ///Humbarine [M-10]
+        ///Christophsis [Q-16]
+        ///Karideph [M-20]
+        ///Lianna [S-6]
+        ///Metellos [K-10]
+        ///Denon [N-13].
+        /// </summary>
+        internal static string locations_ecumenopolis {
+            get {
+                return ResourceManager.GetString("locations_ecumenopolis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cyrillia [O-12]
+        ///Nixor [Q-12]
+        ///Ubrikkia [Q-10]
+        ///Kwenn [R-10]
+        ///Toydaria [R-11]
+        ///Vaathkree [S-8]
+        ///Sriluur [S-8]
+        ///Klatooine [S-9]
+        ///Kintan [S-9]
+        ///Cyborrea [S-9]
+        ///Sleheyron [S-10]
+        ///Nimban [S-10]
+        ///Saki [S-11]
+        ///Varl [S-11]
+        ///Nal Hutta [S-12]
+        ///Nar Shaddaa [S-12]
+        ///Rorak [S-12]
+        ///Hollastin [S-12]
+        ///Nar Kaaga [S-13]
+        ///Roon [S-15]
+        ///Hypori [S-16]
+        ///Tatooine [R-16]
+        ///Siskeen [R-17]
+        ///Shimia [R-17]
+        ///Ryloth [R-17]
+        ///Excarga [T-16]
+        ///Kowak [S-16]
+        ///Pzob [T-15]
+        ///Rothana [T-15]
+        ///Gamorr [T-14]
+        ///Tammuz-an [T-14]
+        ///Arami [T-13]
+        ///Syvris [T- [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string locations_hutt {
+            get {
+                return ResourceManager.GetString("locations_hutt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Aduba [U-11]
+        ///Almania [S-5]
+        ///Alzoc [P-19]
+        ///Ankus [I-7]
+        ///Anoth [J-20]
+        ///Arami [T-13]
+        ///Askaj [M-20]
+        ///Bakura [G-16]
+        ///Balnab [L-7]
+        ///Barab [U-12]
+        ///Baros [U-7]
+        ///Belkadan [L-1]
+        ///Berrol&apos;s Donn [K-19]
+        ///Bimmiel [N-4]
+        ///Birgis [M-3]
+        ///Bunduki [H-16]
+        ///Chalcedon [I-16]
+        ///Codia [H-15]
+        ///Concord Dawn [O-7]
+        ///Cotellier [N-20]
+        ///Cyborrea [S-9]
+        ///Dagobah [M-19]
+        ///Daluuj [U-13]
+        ///Dathomir [O-6]
+        ///Delacrix [T-9]
+        ///Delrakkin [K-21]
+        ///Dom-Bradden [Q-18]
+        ///Drexel [Q-18]
+        ///Drongar [T-5]
+        ///Dubrava [T-13]
+        ///Elom [R-5]
+        ///Endor [H-16]
+        ///Esfandia [I-6]
+        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string locations_neutral {
+            get {
+                return ResourceManager.GetString("locations_neutral", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Aargau [L-10]
+        ///Abregado-Rae [K-13]
+        ///Adumar [J-6]
+        ///Aeten [J-6]
+        ///Alderaan [M-10]
+        ///Aleen [L-7]
+        ///Allon [N-12]
+        ///Alpheridies [O-8]
+        ///Alsakan [L-9]
+        ///Ambria [O-10]
+        ///Anaxes [L-9]
+        ///Andara [L-13]
+        ///Ansion [I-6]
+        ///Antar [N-12]
+        ///Aquaris [N-7]
+        ///Arkania [M-8]
+        ///Atzerri [M-13]
+        ///Azure [P-8]
+        ///Balosar [L-12]
+        ///Bellassa [M-11]
+        ///Belnar [M-9]
+        ///Belsavis [L-18]
+        ///Berchest [N-8]
+        ///Bestine [M-14]
+        ///Bilbringi [J-8]
+        ///Bogden [M-8]
+        ///Bomis Koori [K-16]
+        ///Borleias [K-9]
+        ///Borosk [K-5]
+        ///Bothawui [R-14]
+        ///Botor [K-12]
+        ///Brentaal [L-9]
+        ///Byblos [M-12]
+        ///B [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string locations_republic {
+            get {
+                return ResourceManager.GetString("locations_republic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Aargonar [Q-7]
+        ///Abhean [R-7]
+        ///Akuria [M-5]
+        ///Allanteen [O-14]
+        ///Ando [Q-15]
+        ///Anteevy [P-7]
+        ///Anzat [R-7]
+        ///Arbra [N-17]
+        ///Argazda [N-4]
+        ///Aridus [O-14]
+        ///Atravis [L-19]
+        ///Axxila [O-5]
+        ///Bacrana [O-14]
+        ///Balmorra [N-10]
+        ///Bastion [K-3]
+        ///Belderone [R-6]
+        ///Bescane [K-3]
+        ///Bestine [M-14]
+        ///Bonadan [S-3]
+        ///Borgo Prime [M-6]
+        ///Botajef [O-6]
+        ///Cadinth [S-6]
+        ///Cadomai [R-3]
+        ///Caluula [T-6]
+        ///Castell [M-9]
+        ///Cato Neimoidia [N-11]
+        ///Celanon [O-6]
+        ///Centares [R-7]
+        ///Chorios [R-6]
+        ///Ciutric [N-5]
+        ///Clak&apos;dor [M-18]
+        ///Colla [N-9]
+        ///Columex [R-6]
+        ///D [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string locations_separatist {
+            get {
+                return ResourceManager.GetString("locations_separatist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Aargau [L-10]
+        ///Abregado-Rae [K-13]
+        ///Adumar [J-6]
+        ///Aeten [J-6]
+        ///Alderaan [M-10]
+        ///Aleen [L-7]
+        ///Allon [N-12]
+        ///Alpheridies [O-8]
+        ///Alsakan [L-9]
+        ///Ambria [O-10]
+        ///Anaxes [L-9]
+        ///Andara [L-13]
+        ///Ansion [I-6]
+        ///Antar [N-12]
+        ///Aquaris [N-7]
+        ///Arkania [M-8]
+        ///Atzerri [M-13]
+        ///Azure [P-8]
+        ///Balosar [L-12]
+        ///Bellassa [M-11]
+        ///Belnar [M-9]
+        ///Belsavis [L-18]
+        ///Berchest [N-8]
+        ///Bestine [M-14]
+        ///Bilbringi [J-8]
+        ///Bogden [M-8]
+        ///Bomis Koori [K-16]
+        ///Borleias [K-9]
+        ///Borosk [K-5]
+        ///Bothawui [R-14]
+        ///Botor [K-12]
+        ///Brentaal [L-9]
+        ///Byblos [M-12]
+        ///B [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string locations_uncontested {
+            get {
+                return ResourceManager.GetString("locations_uncontested", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Aargonar [Q-7]
+        ///Aduba [U-11]
+        ///Adumar [J-6]
+        ///Aeten [J-6]
+        ///Agamar [M-5]
+        ///Akuria [M-5]
+        ///Aleen [L-7]
+        ///Almania [S-5]
+        ///Alzoc [P-19]
+        ///Ankus [I-7]
+        ///Anoth [J-20]
+        ///Ansion [I-6]
+        ///Anteevy [P-7]
+        ///Anzat [R-7]
+        ///Arami [T-13]
+        ///Arbra [N-17]
+        ///Argazda [N-4]
+        ///Askaj [M-20]
+        ///Atravis [L-19]
+        ///Bakura [G-16]
+        ///Balnab [L-7]
+        ///Bandomeer [O-6]
+        ///Barab [U-12]
+        ///Baros [U-7]
+        ///Belderone [R-6]
+        ///Belkadan [L-1]
+        ///Belsavis [L-18]
+        ///Berrol&apos;s Donn [K-19]
+        ///Bimmiel [N-4]
+        ///Bimmisaari [R-9]
+        ///Birgis [M-3]
+        ///Boonta [S-8]
+        ///Borgo Prime [M-6]
+        ///Borosk [K-5]
+        ///Bund [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string locations_undeveloped {
+            get {
+                return ResourceManager.GetString("locations_undeveloped", resourceCulture);
             }
         }
         

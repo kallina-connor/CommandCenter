@@ -80,6 +80,7 @@ namespace CommandCenter
             this.buttonJob.Text = "Launch Job Generator";
             this.buttonJob.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.buttonJob.UseVisualStyleBackColor = false;
+            this.buttonJob.Click += new System.EventHandler(this.buttonJob_Click);
             // 
             // buttonBounty
             // 

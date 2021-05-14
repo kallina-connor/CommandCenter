@@ -14,6 +14,7 @@ namespace CommandCenter
         public int age { get; }
         public string crime { get; }
 
+        // create an instance of a target for Bounty class
         public Target(int r)
         {
             name = null;
@@ -23,6 +24,7 @@ namespace CommandCenter
             crime = getRandomCrime(r);
         }
 
+        // determine the target's gender randomly
         private string getRandomGender()
         {
             int n = new Random(Guid.NewGuid().GetHashCode()).Next(1, 1001);
@@ -40,11 +42,14 @@ namespace CommandCenter
             }
         }
 
+        // detrmine the target's age randomly
         private int getRandomAge()
         {
             return new Random(Guid.NewGuid().GetHashCode()).Next(18, 81);
         }
 
+        // use the risk level determined by the Bounty Generator Form 
+        // to return a random element from the corresponding file
         private string getRandomCrime(int RiskLevel)
         {
             if (RiskLevel == 3)
